@@ -1,0 +1,23 @@
+
+public class Booleans {
+	public static void main(String[] args) {
+		boolean x = true;
+		boolean y = false;
+		
+		if(x) {
+			System.out.println(x);
+		}
+		
+		if(y == false) {
+			System.out.println(y);
+		}
+		
+		int int1 = 6;
+		int int2 = 4;
+		double d1 = 3.999999;
+		
+		if(d1 < int2) {
+			System.out.println(d1 + " is less than or equal to "  + int2);
+		}
+	}
+}

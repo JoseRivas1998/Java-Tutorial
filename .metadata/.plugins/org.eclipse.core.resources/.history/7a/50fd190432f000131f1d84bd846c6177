@@ -1,0 +1,15 @@
+
+public class Booleans {
+	public static void main(String[] args) {
+		boolean x = true;
+		boolean y = false;
+		
+		if(x) {
+			System.out.println(x);
+		}
+		
+		if(y) {
+			System.out.println(y);
+		}
+	}
+}
