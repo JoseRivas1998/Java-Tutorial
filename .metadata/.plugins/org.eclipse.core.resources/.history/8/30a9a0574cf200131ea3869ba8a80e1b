@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+public class Game {
+	public static void main(String[] args) {
+		//1 is rock, 2 is paper, 3 is scissors
+		Scanner scan = new Scanner(System.in);
+		int computer;
+		System.out.println("Rock Paper or Scissors? 1 is Rock, 2 is Paper, 3 is Scissors and 0 to stop");
+		boolean bContinue = true;
+		int computerScore = 0;
+		int playerScore = 0;
+		int ties = 0;
+		while(bContinue) {
+			int answer = scan.nextInt();
+			computer = (int) Math.floor((Math.random() * 3) + 1);
+			switch (answer) {
+			case 0: bContinue = false;
+					break;
+			case 1: System.out.println("You entered Rock");
+					switch(computer) {
+					case 1: System.out.println("Me: Rock");
+							System.out.println("Its a tie!");
+							ties++;
+							break;
+					case 2: System.out.println("Me: Paper");
+							System.out.println("I win!");
+							computerScore++;
+							break;
+					case 3: System.out.println("Me: Scissors");
+							System.out.println("You win!");
+							playerScore++;
+							break;
+					}
+					break;
+			case 2: System.out.println("You entered Paper");
+				switch(computer) {
+				case 1: System.out.println("Me: Rock");
+						System.out.println("You win!");
+						playerScore++;
+						break;
+				case 2: System.out.println("Me: Paper");
+						System.out.println("Its a tie");
+						ties++;
+						break;
+				case 3: System.out.println("Me: Scissors");
+						System.out.println("I win!");
+						computerScore++;
+						break;
+				}
+			break;
+			case 3: System.out.println("You entered Scissors");
+				switch(computer) {
+				case 1: System.out.println("Me: Rock");
+						System.out.println("I win!");
+						computerScore++;
+						break;
+				case 2: System.out.println("Me: Paper");
+						System.out.println("You win!");
+						playerScore++;
+						break;
+				case 3: System.out.println("Me: Scissors");
+						System.out.println("Its a tie!");
+						ties++;
+						break;
+				}
+			break;
+			default: System.out.println("That is not a valid answer");
+					 break;
+			}
+			System.out.println("Your Score: " + playerScore + " My Score: " + computerScore + " Ties: " + ties);
+		}
+	}
+}
