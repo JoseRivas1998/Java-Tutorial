@@ -1,0 +1,6 @@
+
+public class ExponentMethods {
+	public static void main(String[] args) {
+		System.out.println(Math.exp(1)); //returns 2.71828
+	}
+}

@@ -1,0 +1,7 @@
+
+public class TrigonometricMethods {
+	public static void main(String[] args) {
+		System.out.println(Math.sin(0)); //return 0.0
+		System.out.println(Math.sin(Math.toRadians(270))); //returns -1.0
+	}
+}
