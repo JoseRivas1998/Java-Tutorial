@@ -15,6 +15,8 @@ public class Switch {
 				break;
 		case 3: System.out.println("Half your classes you got an A, congrats");
 				break;
+		case 7: System.out.println("Congrats!");
+				break;
 		case 4: System.out.println("You are close to glory!");
 				break;
 		case 5: System.out.println("So close but yet so far away!");
